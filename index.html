@@ -112,12 +112,12 @@
 
 
         <!--== Start: Feature About Section Wrapper ==-->
-        <div class="feature-about-section section-padding">
+        <div id="services" class="feature-about-section section-padding">
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 mb-8 text-center text-lg-start">
-                        <a href="product.html">
-                            <img src="assets/images/photos/about1.png" width="555" height="611" alt="Image">
+                        <a href="#">
+                            <img src="assets/images/photos/about1.jpg" width="555" height="611" alt="Image">
                         </a>
                     </div>
                     <div class="col-lg-6 mb-8">
@@ -401,8 +401,12 @@
                         </div>
                     </div>
                     <div class="col-lg-6 mb-8">
+                        <div class="section-title mb-5">
+                            <h6 class="sub-title">About Us</h6>
+                            <h2 class="title">Who Are We?</h2>
+                            <div class="line"></div>
+                        </div>
                         <div class="about-content">
-                            <h4 class="about-title">About Us</h4>
                             <p class="about-desc mb-lg-10 mb-5">Nectrolite Solutions is a dynamic tech company with a
                                 mission to innovate and inspire. Founded on the principles of creativity and excellence,
                                 we specialize in providing top-tier solutions in robotics, IoT, and software
@@ -422,6 +426,95 @@
                 </div>
             </div>
         </div>
+
+        <!--== Start Contact Area Wrapper ==-->
+        <div id="contact" class="contact-area section-padding">
+            <div class="container">
+                <div class="contact-wrp">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="contact-info-area mt-n1">
+                                <h3 class="contact-info-area-title">Contact</h3>
+
+                                <!--== Start Contact Info Item ==-->
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon"><i class="icon icon-location-pin"></i></div>
+                                    <div class="contact-info-content">
+                                        <p>Accra, Ghana</p>
+                                    </div>
+                                </div>
+                                <!--== End Contact Info Item ==-->
+
+                                <!--== Start Contact Info Item ==-->
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon"><i class="icon icon-envelope"></i></div>
+                                    <div class="contact-info-content">
+                                        <p>
+                                            <a href="mailto:nectrolitesolutions@gmail.com">
+                                                nectrolitesolutions@gmail.com
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--== End Contact Info Item ==-->
+
+                                <!--== Start Contact Info Item ==-->
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon"><i class="icon icon-screen-smartphone"></i></div>
+                                    <div class="contact-info-content">
+                                        <p>
+                                            <a href="tel:+233599966869">
+                                                +233 59 996 6869
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--== End Contact Info Item ==-->
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="contact-form-area">
+                                <!--== Start Contact Form ==-->
+                                <form class="contact-form" id="contact-form"
+                                      action="https://whizthemes.com/mail-php/other/mail.php" method="post">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-input-item">
+                                                <input class="form-control" type="text" name="con_name"
+                                                       placeholder="Name">
+                                                <i class="icon fa fa-user"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-input-item">
+                                                <input class="form-control" type="email" name="con_email"
+                                                       placeholder="Email">
+                                                <i class="icon fa fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-input-item">
+                                        <input class="form-control" type="text" placeholder="Subject">
+                                        <i class="icon fa fa-phone-square"></i>
+                                    </div>
+                                    <div class="form-input-item">
+                                        <textarea class="form-control" name="con_message"
+                                                  placeholder="Message"></textarea>
+                                    </div>
+                                    <button class="btn btn-submit mt-1" type="submit">Send Message</button>
+                                </form>
+                                <!--== End Contact Form ==-->
+
+                                <!--== Message Notification ==-->
+                                <div class="form-message"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--== End Contact Area Wrapper ==-->
+
     </main>
 
 

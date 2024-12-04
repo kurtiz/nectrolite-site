@@ -3925,6 +3925,29 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
   color: #FFFFFF;
 }
 
+/* Ensure all gallery images have the same height */
+.gallery-image {
+  display: block;           /* Make the anchor tag a block-level element */
+  position: relative;
+  overflow: hidden;         /* Hide any overflow */
+  height: 400px;            /* Set a fixed height for all images */
+}
+
+/* Ensures images are box-fitted */
+.gallery-image img {
+  width: 100%;              /* Make the image stretch to full width of the container */
+  height: 100%;             /* Make the image stretch to the full height of the container */
+  object-fit: cover;        /* Scale the image while maintaining its aspect ratio */
+  object-position: center;  /* Center the image within the container */
+}
+
+/* Adjust height for smaller screens */
+@media (max-width: 767px) {
+  .gallery-image {
+      height: 250px; /* Smaller height for mobile */
+  }
+}
+
 /*----------------------------------------*/
 /*  Product CSS
 /*----------------------------------------*/
